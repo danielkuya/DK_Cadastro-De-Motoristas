@@ -1,0 +1,15 @@
+{
+
+    "motoristas": [
+        {
+          "ID": 1,
+          "Nome": "Robson Silva",
+          "Telefone": "(73) 96766-3273",
+          "DataNascimento": "1963-10-13",
+          "CNH": "1995",
+          "CPF": "887.047.767-39",
+          "CNHTipo": "C",
+          "Ativo": false
+        }
+    ]
+}
