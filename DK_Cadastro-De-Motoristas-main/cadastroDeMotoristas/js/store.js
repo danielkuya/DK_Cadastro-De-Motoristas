@@ -263,17 +263,16 @@ var motoristas = [
 
 
 ];
-
 // Adicionando o link aos motoristas existentes
 for (let i = 0; i < motoristas.length; i++) {
-  motoristas[i].Nome = `<a href="https://this-person-does-not-exist.com/pt">${motoristas[i].Nome}</a>`;
+  motoristas[i].Nome = `<a href="https://this-person-does-not-exist.com/pt" target="_blank">${motoristas[i].Nome}</a>`;
 }
 
 // Adicionando o link aos motoristas gerados aleatoriamente
 for (let i = 0; i < 175; i++) {
   const novoMotorista = {
     ID: i + 26,
-    Nome: `<a href="https://this-person-does-not-exist.com/pt">Motorista ${i + 26}</a>`,
+    Nome: `<a href="https://this-person-does-not-exist.com/pt" target="_blank">Motorista ${i + 26}</a>`,
     Telefone: `(99) 99999-${String(1000 + i).slice(-4)}`,
     DataNascimento: `198${Math.floor(Math.random() * 10)}-0${Math.floor(Math.random() * 9) + 1}-${String(Math.floor(Math.random() * 28) + 1).padStart(2, '0')}`,
     CNH: `200${Math.floor(Math.random() * 10)}`,
@@ -283,3 +282,4 @@ for (let i = 0; i < 175; i++) {
   };
   motoristas.push(novoMotorista);
 }
+
